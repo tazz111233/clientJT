@@ -1,0 +1,139 @@
+/* Admin Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 20px;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search Bar Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.search-container label {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.search-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table th, 
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Status Label */
+.status-label {
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 8px 12px;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    min-width: 100px;
+}
+
+/* Status Colors */
+.active {
+    background-color: blue;
+    color: white;
+}
+
+.complete {
+    background-color: green;
+    color: white;
+}
+
+.cancelled {
+    background-color: red;
+    color: white;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    margin-right: 5px;
+}
+
+/* Button Colors */
+.active-btn {
+    background-color: blue;
+    color: white;
+    border: 2px solid black;
+}
+
+.complete-btn {
+    background-color: green;
+    color: white;
+    border: 2px solid black;
+}
+
+.cancel-btn {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+}
+
+/* Button Hover Effects */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 14px;
+    }
+
+    .search-container {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .search-container input {
+        width: 150px;
+    }
+
+    button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Classic T-Shirt",
+      "price": "20",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 2,
+      "name": "Stylish Jacket",
+      "price": "50",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 3,
+      "name": "Comfortable Jeans",
+      "price": "40",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 4,
+      "name": "Comfortable Ts",
+      "price": "30",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 5,
+      "name": "tops",
+      "price": "70",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 6,
+      "name": "cap",
+      "price": "80",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 7,
+      "name": "Dress",
+      "price": "100",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 8,
+      "name": "shirt",
+      "price": "50",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 9,
+      "name": "shoes",
+      "price": "200",
+      "image": "https://via.placeholder.com/150"
+    }
+  ]

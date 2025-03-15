@@ -1,0 +1,73 @@
+.activ1 {
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.active1 {
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 10px;
+    background-color: green;
+    color: white;
+}
+.cancelled1 {
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+}
+.for1 {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto; /* Centers the form horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items inside the form */
+    justify-content: center;
+    background-color: #f9f9f9; /* Background color for the form */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .form-group input {
+    width: 250px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: none;
+    margin: 0.5rem 0;
+    padding: 20px;
+  }
+  
+  /* Style the container holding the buttons */
+  .for1 button {
+    display: inline-block; /* Ensure buttons are inline */
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    border: 2px solid black;
+    transition: background-color 0.3s;
+    margin: 0 0.5rem; /* Add horizontal spacing between buttons */
+  }
+  .discount-code{
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+  }

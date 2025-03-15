@@ -1,0 +1,41 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    
+    
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0 ;
+    height: 100%; /* Ensure the body spans the full height of the viewport */
+    background-color: #e2e2e2;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set the root container to fill the viewport */
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow the main content to grow and push the footer down */
+  }
+  
+  main {
+    flex: 1; /* Make the main content area flexible */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #fff;
+  }
+  

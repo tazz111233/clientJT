@@ -1,0 +1,185 @@
+
+.gills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}.container1 {
+    padding: 20px;
+    margin-top: -50px;
+    height: auto !important; /* Ensure height is auto */
+}
+.cart {
+    padding: 20px;
+    height: 600px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 30px;
+    padding-left: 200px;
+  }
+  
+  .carttable {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 10px;
+    
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 150px;
+  }
+  
+  .cart-table-header {
+    font-weight: bold;
+    display: contents; /* Ensures the header spans the whole grid */
+  }
+  
+  .cart-table-header span {
+    text-align: left;
+    font-size: 25px;
+  }
+  
+  .cart-table-body {
+    display: contents; /* Allows for dynamic rows */
+  }
+  
+  .cart-table-row {
+    display: contents; /* Each row will be a part of the grid */
+    
+  }
+  
+  .cart-table-row span {
+    padding: 8px;
+  }
+  
+  
+  .discount-code1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .discount-code1 input {
+    width: 170px; /* Fixed typo */
+    height: 40px;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    background: none;
+    margin: 0.5rem 0;
+    padding: 10px; /* Adjusted for better fit */
+  }
+  
+  
+  .total {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+  }
+  
+  .links {
+    color: black;
+    width: 50px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;  /* Adds padding inside the links */
+    border-radius: 12px;  /* Border radius applied to each link */
+    border: 2px solid black;  /* Adds a black border around each individual link */
+    transition: background-color 0.3s;  /* Optional: for smooth background color transitions */
+  }
+  
+  .pay-button {
+    color: black;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+   
+    border-radius: 12px;  /* Border radius applied to each button */
+    border: 2px solid black;  /* Adds a black border around the button */
+    
+    background-color: transparent;
+    
+    /* Flexbox settings for centering the text */
+   
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .pay-button:hover{
+    background-color: transparent !important;
+  }
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup {
+    background: #F5D5DA ;
+    padding: 20px;
+    border-radius: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+  
+  .popup-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .popup-buttons button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .popup-buttons button:first-child {
+    background: gray;
+    color: white;
+  }
+  
+  .popup-buttons button:last-child {
+    background: green;
+    color: white;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .carttable {
+      margin-left: -120px;
+      margin-right: 60px;
+        
+    }
+    .total{
+      margin-left: -120px !important;
+    }
+    .pay-button{
+      margin-left: -120px;
+    }
+    .discount-code1{
+      margin-left: -120px;
+      
+    }
+  }
+
+  
+  

@@ -1,0 +1,45 @@
+.product-card {
+  background: #fff;
+  padding: 1rem;
+  width: 100%; /* Take full width of the grid cell */
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Ensure no overflow */
+
+}
+
+.product-image {
+  width: 100%; /* Adjust based on the container */
+  height: 300px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensures the image is cropped proportionally to fit the box */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.product-card h3{
+  margin-top: 20px;
+}
+
+.product-image:hover {
+  transform: scale(1.1); /* Scale the image by 10% */
+}
+
+.add-to-cart-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #D3D3D3; /* Blue border */
+  border-radius: 20px; /* Rounded corners */
+  background: transparent; /* Transparent background */
+  color: #FF5C8A; /* Text color matches the border */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #EDBDD7; /* Blue background on hover */
+  color: white; /* White text on hover */
+}

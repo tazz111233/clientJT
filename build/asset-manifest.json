@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.27d3042f.css",
+    "main.js": "/static/js/main.70273237.js",
+    "static/media/pexels-lum3n-44775-322207.jpg": "/static/media/pexels-lum3n-44775-322207.8dd725ef6005d1a26430.jpg",
+    "static/media/35809804_8338565.jpg": "/static/media/35809804_8338565.72470f4e4fdb14a861f9.jpg",
+    "static/media/pexels-jmendezrf-1536619.jpg": "/static/media/pexels-jmendezrf-1536619.0d630c6fc95b11db7397.jpg",
+    "static/media/pexels-solliefoto-298863.jpg": "/static/media/pexels-solliefoto-298863.e3ae43999a3adaf25d07.jpg",
+    "static/media/pexels-brandandpalms-768975.jpg": "/static/media/pexels-brandandpalms-768975.a7ff34f921edac534df5.jpg",
+    "static/media/horsebag.png": "/static/media/horsebag.7c604cf978327fbb437e.png",
+    "static/media/logo.png": "/static/media/logo.561ca5037fcf318a72c8.png",
+    "static/media/logotransparent.png": "/static/media/logotransparent.b56a90f74b9a24ca6e68.png",
+    "static/media/gucci.jpg": "/static/media/gucci.6619a35a24a58288e852.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.27d3042f.css.map": "/static/css/main.27d3042f.css.map",
+    "main.70273237.js.map": "/static/js/main.70273237.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27d3042f.css",
+    "static/js/main.70273237.js"
+  ]
+}

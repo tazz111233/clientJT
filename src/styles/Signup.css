@@ -1,0 +1,68 @@
+/* Body should take up full height to allow for vertical centering */
+body {
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between form and footer */
+  }
+  
+  /* Center the form horizontally and vertically */
+  .for {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 500px;
+    padding: 100px;
+    margin-bottom: 30px;
+    margin: 0 auto; /* Centers the form horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items inside the form */
+    justify-content: center;
+    background-color: #f9f9f9; /* Background color for the form */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-bottom: 30px;
+  }
+  
+  /* Center the input fields and labels */
+  .inp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .inp input {
+    width: 250px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: none;
+    margin: 0.5rem 0;
+    padding: 20px;
+  }
+  
+  /* Style the container holding the buttons */
+  .for button {
+    display: inline-block; /* Ensure buttons are inline */
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    border: 2px solid black;
+    transition: background-color 0.3s;
+    margin: 0 0.5rem; /* Add horizontal spacing between buttons */
+  }
+  
+  .for .button-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 1rem; /* Add spacing between buttons */
+    margin-top: 1rem; /* Add spacing above the buttons */
+  }
+  
+  /* Disabled button styles */
+  button:disabled {
+    background-color: #ccc; /* Gray out disabled button */
+  }
+  
