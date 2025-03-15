@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -17,10 +18,10 @@ const SignUpLogInForm = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate(); // Navigation hook
   const [isActive, setIsActive] = useState(false);
-  //const [username2, setUsername2] = useState("");
+ // const [username2, setUsername2] = useState("");
   //const [password2, setPassword2] = useState("");
   const [isSubmitting2, setIsSubmitting2] = useState(false);
- //const [message2, setMessage2] = useState("");
+  //const [message2, setMessage2] = useState("");
  // const [error2, setError2] = useState("");
 
   const handleRegisterClick = () => {
@@ -57,7 +58,7 @@ const SignUpLogInForm = () => {
 
   const handleSignup = async (e) => {
     e.preventDefault();
-    
+    setIsSubmitting2(true);
     setMessage("");
     setError("");
 
