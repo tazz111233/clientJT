@@ -33,7 +33,7 @@ const SignUpLogInForm = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    
     setMessage("");
     setError("");
 
