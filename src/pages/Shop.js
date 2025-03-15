@@ -72,13 +72,13 @@ function Shop() {
     }
 
     setFilteredItems(sortedItems);
-  };
+  }
 
   useEffect(() => {
     if (sortOrder === "top5") {
       handleSortChange("top5");
     }
-  }, [items]);
+  }, [items, sortOrder, handleSortChange]);
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
