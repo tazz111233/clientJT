@@ -124,7 +124,7 @@ const SignUpLogInForm = () => {
               <i className="bx bxs-lock-alt"></i>
             </div>
             <div className="forgot-link">
-              <a href="#" onClick={handleForgotPassword}>Forgot Password?</a>
+              <a onClick={handleForgotPassword}>Forgot Password?</a>
             </div>
             <button type="submit" className="btn" disabled={isSubmitting2}>
               Login
