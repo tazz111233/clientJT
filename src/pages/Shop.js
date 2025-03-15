@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react"; // import useCallback
 import { useNavigate, useLocation } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import "../styles/Shop.css";
@@ -48,7 +48,7 @@ function Shop() {
     }
   }, [location.search, items]);
 
-  const handleSortChange = (order) => {
+  const handleSortChange = useCallback((order) => { // Memoize the function with useCallback
     setSortOrder(order);
     setIsSortOpen(false);
 
@@ -72,13 +72,13 @@ function Shop() {
     }
 
     setFilteredItems(sortedItems);
-  }
+  }, [items]); // Add items as a dependency
 
   useEffect(() => {
     if (sortOrder === "top5") {
       handleSortChange("top5");
     }
-  }, [items, sortOrder, handleSortChange]);
+  }, [items, sortOrder, handleSortChange]); // This effect will only run when `handleSortChange` changes
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
