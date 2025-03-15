@@ -141,9 +141,17 @@ body {
     margin: -15px 0 15px;
   }
   
-  .forgot-link a {
-    font-size: 14.5px;
-    color: #333;
+  .forgot-link button {
+    width: 100%;
+  height: auto;
+  background: transparent;
+  border: none;
+  color: black; /* Set the text color to match your design */
+  font-size: 14.5px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline; /* Add underline like an anchor tag */
+  cursor: pointer;
   }
   
   .btn {
