@@ -12,16 +12,16 @@ const SignUpLogInForm = () => {
   const [phone, setPhone] = useState("");
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  //const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate(); // Navigation hook
   const [isActive, setIsActive] = useState(false);
-  const [username2, setUsername2] = useState("");
-  const [password2, setPassword2] = useState("");
+  //const [username2, setUsername2] = useState("");
+  //const [password2, setPassword2] = useState("");
   const [isSubmitting2, setIsSubmitting2] = useState(false);
-  const [message2, setMessage2] = useState("");
-  const [error2, setError2] = useState("");
+ //const [message2, setMessage2] = useState("");
+ // const [error2, setError2] = useState("");
 
   const handleRegisterClick = () => {
     setIsActive(true); // Set to true to show the Register form
