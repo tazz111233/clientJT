@@ -64,7 +64,10 @@ body {
   z-index: 1000;
 }
 
-
+/* Loader Animation */
+:root {
+  --animation-dur: 2s;
+}
 
 .loader {
   width: 100px;
