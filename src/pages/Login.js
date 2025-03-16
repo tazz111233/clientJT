@@ -32,29 +32,43 @@ const SignUpLogInForm = () => {
     setIsActive(false); // Set to false to show the Login form
   };
 
-  const handleLogin = async (e) => {
-    e.preventDefault();
-    
-    setMessage("");
-    setError("");
-
-    try {
-      const response = await axios.post("https://backendjt-1.onrender.com/login", {
-        username,
-        password,
-      });
-
-      setMessage(response.data.message);
-
-      // Store session and redirect to home
-      localStorage.setItem("username", username);
-      navigate("/home");
-    } catch (err) {
-      setError(err.response?.data?.error || "An unexpected error occurred.");
-    } finally {
-      
-    }
+  const LoadingPopup = () => {
+    return (
+      <div className="loading-overlay">
+        <div className="loading-popup">
+          <div className="spinner"></div>
+          <p>Logging in...</p>
+        </div>
+      </div>
+    );
   };
+
+  
+  const [isLoggingIn, setIsLoggingIn] = useState(false);
+
+const handleLogin = async (e) => {
+  e.preventDefault();
+  
+  setIsLoggingIn(true); // Show loading popup
+  setMessage("");
+  setError("");
+
+  try {
+    const response = await axios.post("https://backendjt-1.onrender.com/login", {
+      username,
+      password,
+    });
+
+    setMessage(response.data.message);
+    localStorage.setItem("username", username);
+    navigate("/home");
+  } catch (err) {
+    setError(err.response?.data?.error || "An unexpected error occurred.");
+  } finally {
+    setIsLoggingIn(false); // Hide loading popup
+  }
+};
+
 
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -99,6 +113,7 @@ const SignUpLogInForm = () => {
 
   return (
     <div className="juju">
+      {isLoggingIn && <LoadingPopup />}
       <div className={`container ${isActive ? "active" : ""}`}>
         <div
           className={`form-box login ${isActive ? "hidden" : ""}`}
