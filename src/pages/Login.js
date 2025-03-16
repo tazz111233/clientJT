@@ -34,13 +34,15 @@ const SignUpLogInForm = () => {
 
   const LoadingPopup = () => {
     return (
-      <div class="loader">
-          <div class="cir1"></div>
-          <div class="cir2"></div>
-          <div class="cir3"></div>
-          <div class="cir4"></div>
-          <div class="cir5"></div>
+      <div className="loading-overlay">
+      <div className="loader">
+        <div className="cir1"></div>
+        <div className="cir2"></div>
+        <div className="cir3"></div>
+        <div className="cir4"></div>
+        <div className="cir5"></div>
       </div>
+    </div>
     );
   };
 
